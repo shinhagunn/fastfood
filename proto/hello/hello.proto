@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package fastfood.proto.helloapi;
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+
+option go_package="github.com/shinhagunn/fastfood/proto/hello";
+
+service HelloService {
+  rpc Hello (google.protobuf.Empty) returns (HelloResponse) {
+    option (google.api.http) = {
+      get: "/v1/echo"
+    };
+  }
+}
+
+message HelloResponse {
+    string msg = 1;
+}
