@@ -3,6 +3,7 @@ module github.com/shinhagunn/fastfood
 go 1.21.5
 
 require (
+	github.com/cockroachdb/errors v1.11.1
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.18.1
 	github.com/shopspring/decimal v1.3.1
 	golang.org/x/crypto v0.14.0
@@ -10,15 +11,17 @@ require (
 	google.golang.org/grpc v1.59.0
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.3.0
 	google.golang.org/protobuf v1.31.0
+	gorm.io/gorm v1.25.5
 )
 
 require (
-	github.com/cockroachdb/errors v1.11.1 // indirect
 	github.com/cockroachdb/logtags v0.0.0-20230118201751-21c54148d20b // indirect
 	github.com/cockroachdb/redact v1.1.5 // indirect
 	github.com/getsentry/sentry-go v0.18.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
